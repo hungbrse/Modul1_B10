@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let array = [2, 7, 9, 1, 6, 44, 7, 23];
+
+      let sum1 = 0;
+      let sum2 = 0;
+
+      for (let index = 0; index < array.length; index++) {
+        if (array[index] % 2 == 0) {
+          sum1 = sum1 + array[index];
+        }
+      }
+
+      console.log("tổng số chẵn:" + sum1);
+
+      for (let index = 0; index < array.length; index++) {
+        if (array[index] % 2 == 1) {
+          sum2 = sum2 + array[index];
+        }
+      }
+
+      console.log("tổng số lẻ:" + sum2);
+    </script>
+  </body>
+</html>

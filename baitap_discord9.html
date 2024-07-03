@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let array = [2, 7, 9, 1, 6, 44, 7, 23];
+
+      let soNguyenTo = [];
+
+      for (let index = 0; index < array.length; index++) {
+        let isPrime = true;
+
+        let currentNumber = array[index];
+
+        if (currentNumber < 2) {
+          isPrime = false;
+        } else {
+          for (let j = 2; j < currentNumber; j++) {
+            if (currentNumber % j === 0) {
+              isPrime = false;
+              break;
+            }
+          }
+        }
+
+        if (isPrime) {
+          soNguyenTo.push(currentNumber);
+        }
+      }
+
+      console.log(soNguyenTo); // Output: [2, 7, 7, 23]
+    </script>
+  </body>
+</html>

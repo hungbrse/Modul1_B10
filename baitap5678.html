@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=
+    , initial-scale=1.0"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // bài tập 5
+
+      //   let math = parseFloat(prompt("nhập điểm hehe"));
+      //   let physics = parseFloat(prompt("nhập điểm hehe"));
+      //   let chemistry = parseFloat(prompt("nhập điểm hehe"));
+
+      //   let average = (math + physics + chemistry) / 3;
+
+      //   document.write(average);
+      //   // bai tap 6
+
+      //   let dolar = parseFloat(prompt("dolar"));
+
+      //   let vnd = dolar * 23000;
+
+      //   //   document.write(vnd);
+
+      //   //   bai 7
+
+      //   let a = +prompt("nhap so");
+
+      //   let b = +prompt("nhap so");
+
+      //   let c = +prompt("nhap so");
+
+      //   if (a > b && a > c) {
+      //     document.write("số lớn nhất là a:" + a);
+      //   } else if (b > a && b > c) {
+      //     document.write("số lớn nhất là b hehe" + b);
+      //   } else {
+      //     document.write("số lớn nhất là c hehe" + c);
+      //   }
+
+      //   //   //bai 8
+
+      //   // Nhập vào N là số lượng giá trị trong dãy số
+      //   const N = parseInt(prompt("Nhập vào N:"));
+
+      //   // Nhập vào các giá trị của dãy số
+      //   let array = [];
+      //   for (let i = 0; i < N; i++) {
+      //     array.push(parseInt(prompt("Nhập giá trị thứ " + (i + 1) + ":")));
+      //   }
+
+      //   // Giả sử giá trị đầu tiên là giá trị lớn nhất
+      //   let max = array[0];
+
+      //   // Xét các giá trị còn lại trong dãy số
+      //   for (let i = 1; i < N; i++) {
+      //     if (array[i] > max) {
+      //       max = array[i];
+      //     }
+      //   }
+
+      //   // Hiển thị giá trị lớn nhất
+      //   console.log("Giá trị lớn nhất là: " + max);
+      //   alert("Giá trị lớn nhất là: " + max);
+
+      const N = parseInt(prompt("nhập độ dài của mảng"));
+
+      let array = [];
+
+      for (let index = 0; index < N; index++) {
+        array.push(parseInt(prompt("nhập giá trị thứ" + index + ":")));
+      }
+
+      let max = array[0];
+
+      for (let index2 = 1; index2 < array.length; index2++) {
+        if (array[index2] > max) {
+          max = array[index2];
+        }
+      }
+
+      alert("giá trị lớn nhất là:" + max);
+
+
+
+
+
+
+      
+    </script>
+  </body>
+</html>
